@@ -14,5 +14,11 @@ ASSET_MANAGER.downloadAll(function () {
 
 	gameEngine.init(ctx);
 
+	gameEngine.addEntity(new Background(this.gameEngine));
+	gameEngine.addEntity(new FarMidground(this.gameEngine));
+	gameEngine.addEntity(new Midground(this.gameEngine));
+	gameEngine.addEntity(new Foreground(this.gameEngine));
+	gameEngine.addEntity(new Beardo(this.gameEngine));
+
 	gameEngine.start();
 });
