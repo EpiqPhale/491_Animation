@@ -7,7 +7,7 @@ class Hero {
 
         this.spritesheet = ASSET_MANAGER.getAsset("./sprites/hero.png");
 
-        this.animation = new Animator(this.spritesheet, 0, 0, 15, 15, 6, 0.1, 1, false, true);
+        this.animation = new Animator(this.spritesheet, 0, 0, 15, 15, 6, 0.08, 1, false, true);
     };
 
     update() {
